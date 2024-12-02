@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-white bg-black font-sans leading-relaxed antialiased;
+    }
+}
+
+@layer components {
+    /* Menu Links */
+    .menuLink {
+        @apply cursor-pointer text-white transition-all duration-300 hover:text-[#c5c5c5] hover:underline;
+    }
+
+    /* Tags */
+    .tags {
+        @apply rounded-full px-4 py-2 text-xs font-medium uppercase shadow-lg transition-all duration-300;
+        background-color: #0abde3; /* Default color */
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+        display: inline-block;
+
+        /* Hover Effects */
+        &:hover {
+            @apply scale-105 brightness-110 shadow-xl;
+        }
+    }
+
+    /* Tag Colors */
+    .tags:nth-child(2) {
+        background-color: #a55eea;
+    }
+
+    .tags:nth-child(3) {
+        background-color: #eb4d4b;
+    }
+
+    .tags:nth-child(4) {
+        background-color: #db9f10;
+    }
+
+    /* Heading Styling */
+    .section-heading {
+        @apply text-4xl font-bold mb-8 tracking-wide text-center sm:text-left;
+    }
+
+    /* Card Styling */
+    .card {
+        @apply bg-[#1a1a1a] rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105;
+    }
+
+    .card img {
+        @apply w-full h-48 object-cover;
+    }
+
+    .card-content {
+        @apply p-6;
+    }
+
+    .card-title {
+        @apply text-lg font-semibold mb-2;
+    }
+
+    .card-desc {
+        @apply text-gray-400 text-sm mb-4;
+    }
+}
