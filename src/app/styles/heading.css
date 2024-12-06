@@ -1,0 +1,20 @@
+/* heading.css */
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background-color: #f4f4f4; /* Optional, change or remove based on your theme */
+}
+
+.heading-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-transform: capitalize; /* Makes the title start with uppercase */
+    border-bottom: 2px solid #007bff; /* Adds a decorative underline */
+    padding-bottom: 5px;
+}

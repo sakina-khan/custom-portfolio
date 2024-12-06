@@ -2,6 +2,9 @@ import React from "react";
 import Heading from "./Heading";
 import Card from "./Card";
 
+
+
+
 const data = [
   {
     id: 0,
@@ -28,12 +31,12 @@ const data = [
 
 const Projects = () => {
   return (
-    <div id="projects" className="container pt-32">
+    <div id="projects" className="project-container">
       {/* Heading */}
       <Heading title="My Projects" />
 
       {/* Projects Grid */}
-      <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+      <div className="projects-grid projects-grid-xl project-grid-md-2 projects-grid-lg-3 projectscenter">
         {data.length > 0 ? (
           data.map((el, index) => (
             <Card

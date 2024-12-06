@@ -1,13 +1,14 @@
 import React from 'react';
+import "../app/styles/about.css"
 
 const About = () => {
   return (
-    <div className="container pt-23">
-      <h2 className="text-4xl md:text-5xl" data-aos="zoom-in-up">
+    <div className="about-container">
+      <h2 className="about-heading" data-aos="zoom-in-up">
         About Me
       </h2>
 
-      <p className="text-gray-500 pt-4" data-aos="zoom-in-up">
+      <p className="about-text" data-aos="zoom-in-up">
         &quot;I&apos;m Sakina Khan, a dedicated student pursuing a Bachelor&apos;s in Business and Information Technology. My passion lies at the intersection of technology and business, where I enjoy creating innovative solutions that bridge the gap between technical capabilities and strategic goals.
         <br />
         <br />

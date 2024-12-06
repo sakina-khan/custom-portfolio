@@ -1,13 +1,15 @@
 import React from 'react';
+import "../app/styles/skills.css"
+
 
 const Skills = () => {
   return (
-    <div id="skills" className="container pt-32">
-      <div className="grid md:grid-cols-2 gap-20 items">
+    <div id="Skills" className='skill-container'>
+      <div className="skill-grid">
         {/* Left Section */}
         <div data-aos="zoom-in-up">
-          <h2 className="text-4xl md:text-5xl">Technologies I Work With</h2>
-          <p className="text-gray-500 pt-2">
+          <h2 className="skill-heading">Technologies I Work With</h2>
+          <p className="skill-text">
             Hello! My name is Sakina. 🎓 I have recently completed my two-year pre-engineering program and am now diving into the exciting world of Certified Cloud Generative AI at Governor House. 🚀 Additionally, I am pursuing my bachelor&apos;s degree in Public Administration. Passionate about exploring the intersections of technology and public service, I am eager to leverage my diverse educational background to drive innovation and positive change in both fields. 🌟
             <br />
             <br />
@@ -16,16 +18,16 @@ const Skills = () => {
         </div>
         {/* Right Section */}
         <div>
-          <div className="grid grid-cols-2 text-3xl sm:text-4xl">
-            <div className="space-y-2">
-              <h2 data-aos="fade-right">TypeScript</h2>
-              <h2 data-aos="fade-right">React.js</h2>
-              <h2 data-aos="fade-right">Next.js</h2>
+          <div className="skill-right">
+            <div className="skill-icon-grid">
+              <h2 data-aos="skill-up">TypeScript</h2>
+              <h2 data-aos="skill-up">React.js</h2>
+              <h2 data-aos="skill-up">Next.js</h2>
             </div>
-            <div className="space-y-2">
-              <h2 data-aos="fade-left">HTML</h2>
-              <h2 data-aos="fade-left">CSS</h2>
-              <h2 data-aos="fade-left">Node.js</h2>
+            <div className="skill-space">
+              <h2 data-aos="skill-up">HTML</h2>
+              <h2 data-aos="skill-up">CSS</h2>
+              <h2 data-aos="skill-up">Node.js</h2>
             </div>
           </div>
         </div>
